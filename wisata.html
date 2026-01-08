@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Wisata DIY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<!-- MODAL DETAIL WISATA -->
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <img id="modal-img" alt="Detail Wisata">
+        <h2 id="modal-title"></h2>
+        <p id="modal-desc"></p>
+
+        <p><strong>Lokasi:</strong> <span id="modal-lokasi"></span></p>
+        <p><strong>Jam Operasional:</strong> <span id="modal-jam"></span></p>
+        <p><strong>Harga Tiket:</strong> <span id="modal-harga"></span></p>
+    </div>
+</div>
+
+
+<body class="profil-page wisata-page">
+
+
+<header id="header">
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo_DIY.png" alt="Logo DIY">
+            <span>Portal Pemerintah Daerah DIY</span>
+        </div>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="profil.html">Pemerintah</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="wisata.html" class="active">Wisata</a>
+            <a href="budaya.html">Budaya</a>
+            <a href="peta.html">Peta</a>
+        </nav>
+    </div>
+</header>
+
+<!-- KONTEN UTAMA -->
+<section class="section" style="margin-top:50px;">
+    <h2>Tempat Wisata Populer</h2>
+
+    <div class="wisata">
+    <div class="wisata-card" onclick="openModal('borobudur')">
+        <img src="ratu.jpg" alt="Keraton Ratu Boko">
+        <div class="wisata-text">
+            <h3>Keraton Ratu Boko</h3>
+        </div>
+    </div>
+
+    <div class="wisata-card" onclick="openModal('prambanan')">
+        <img src="prambanan.jpg">
+        <div class="wisata-text">
+            <h3>Candi Prambanan</h3>
+        </div>
+    </div>
+
+    <div class="wisata-card" onclick="openModal('malioboro')">
+        <img src="malioboro.jpg">
+        <div class="wisata-text">
+            <h3>Malioboro</h3>
+        </div>
+    </div>
+
+    <div class="wisata-card " onclick="openModal('keraton')">
+        <img src="keraton.jpg">
+        <div class="wisata-text">
+            <h3>Keraton Yogyakarta</h3>
+        </div>
+    </div>
+
+    <div class="wisata-card " onclick="openModal('goapindul')">
+    <img src="goapindul.png" alt="Goa Pindul">
+    <div class="wisata-text">
+        <h3>Goa Pindul</h3>
+    </div>
+    </div>
+
+<div class="wisata-card " onclick="openModal('hutanpinus')">
+    <img src="pinus.png" alt="Hutan Pinus Mangunan">
+    <div class="wisata-text">
+        <h3>Hutan Pinus Mangunan</h3>
+    </div>
+</div>
+
+<div class="wisata-card " onclick="openModal('heha')">
+    <img src="sky.png" alt="HeHa Sky View">
+    <div class="wisata-text">
+        <h3>HeHa Sky View</h3>
+    </div>
+</div>
+
+<div class="wisata-card " onclick="openModal('vredeburg')">
+    <img src="museum.jpg" alt="Museum Benteng Vredeburg">
+    <div class="wisata-text">
+        <h3>Museum Benteng Vredeburg</h3>
+    </div>
+</div>
+
+<div class="wisata-card " onclick="openModal('ske')">
+    <img src="park.png" alt="SKE City Park">
+    <div class="wisata-text">
+        <h3>SKE City Park</h3>
+    </div>
+</div>
+
+</div>
+</section>
+
+<footer class="footer">
+    <div class="footer-bottom">
+        © 2026 Daerah Istimewa Yogyakarta.
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
