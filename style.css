@@ -947,3 +947,98 @@ body.tentang-page .section > p {
     font-weight: 500;
 }
 
+/* =========================
+   RESPONSIVE MOBILE FIX
+   ========================= */
+@media (max-width: 768px) {
+
+    /* ===== GLOBAL ===== */
+    body {
+        font-size: 14px;
+    }
+
+    .section {
+        padding: 70px 16px;
+    }
+
+    h2 {
+        font-size: 26px !important;
+    }
+
+    /* ===== HEADER ===== */
+    .navbar {
+        padding: 14px 16px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .logo span {
+        font-size: 14px;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+        height: 100svh;
+        padding: 0 12px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+    }
+
+    .hero-desc {
+        font-size: 14px;
+        max-width: 100%;
+        line-height: 1.6;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    /* ===== GRID JADI 1 KOLOM ===== */
+    .info,
+    .wisata,
+    .budaya-images,
+    .budaya-cards,
+    .kabupaten-cards,
+    .footer-container {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* ===== BUDAYA ===== */
+    .budaya-section {
+        padding: 70px 16px;
+    }
+
+    .budaya-section h2 {
+        font-size: 28px;
+    }
+
+    /* ===== PETA ===== */
+    .peta-container {
+        height: 300px;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+        padding: 40px 16px 25px;
+    }
+
+    .footer-box h3 {
+        font-size: 18px;
+    }
+
+    .footer-box p {
+        font-size: 14px;
+    }
+}
+
+
+
